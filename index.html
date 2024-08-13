@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <title>Index</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrap">
+                        <a class="logo-link" href="index.html">
+                            <img
+                                src="/src/assets/logo.png"
+                                alt=""
+                                class="logo"
+                            />
+                        </a>
+                        <button class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <nav class="header__nav md:-translate-x-full">
+                            <button class="header__search">
+                                <svg
+                                    width="60"
+                                    height="52"
+                                    viewBox="0 0 60 52"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        x="0.5"
+                                        y="0.5"
+                                        width="59"
+                                        height="51"
+                                        rx="25.5"
+                                        stroke="#EFE8E8"
+                                    />
+                                    <path
+                                        d="M29 33C33.4183 33 37 29.4183 37 25C37 20.5817 33.4183 17 29 17C24.5817 17 21 20.5817 21 25C21 29.4183 24.5817 33 29 33Z"
+                                        stroke="#B3925F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M39 35L34.65 30.65"
+                                        stroke="#B3925F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                            <form action="" class="header__search-form">
+                                <button
+                                    type="button"
+                                    class="header__search-close opacity-0"
+                                >
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M18 6L6 18"
+                                            stroke="#B3925F"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M6 6L18 18"
+                                            stroke="#B3925F"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                                <input
+                                    type="text"
+                                    class="header__search-input w-0 opacity-0"
+                                />
+                            </form>
+                            <ul class="header__nav-list">
+                                <li
+                                    class="header__nav-item header__nav-item-link hidden md:flex"
+                                    data-twe-ripple-init=""
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/church-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Служіння</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <div class="relative" data-twe-dropdown-ref>
+                                        <button
+                                            class="header__dropdown flex md:hidden"
+                                            type="button"
+                                            id="dropdownMenuButton1"
+                                            data-twe-dropdown-toggle-ref
+                                            aria-expanded="false"
+                                            data-twe-ripple-init
+                                            data-twe-ripple-color="light"
+                                        >
+                                            <img
+                                                src="/src/assets/church-icon.svg"
+                                                alt=""
+                                            />
+                                            <span>Служіння</span>
+                                            <span
+                                                class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    class="md:hidden"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul
+                                            class="header__dropdown-list"
+                                            aria-labelledby="dropdownMenuButton1"
+                                            data-twe-dropdown-menu-ref
+                                        >
+                                            <li class="header__dropdown-item">
+                                                <img
+                                                    src=""
+                                                    alt=""
+                                                    class="hidden md:block"
+                                                />
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-media"
+                                >
+                                    <div class="relative" data-twe-dropdown-ref>
+                                        <button
+                                            class="header__dropdown flex"
+                                            type="button"
+                                            id="dropdownMenuButton2"
+                                            data-twe-dropdown-toggle-ref
+                                            aria-expanded="false"
+                                            data-twe-ripple-init
+                                            data-twe-ripple-color="light"
+                                        >
+                                            <img
+                                                src="/src/assets/media-icon.svg"
+                                                alt=""
+                                            />
+                                            <span>Медіа</span>
+                                            <span
+                                                class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    class="md:hidden"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul
+                                            class="header__dropdown-list"
+                                            aria-labelledby="dropdownMenuButton2"
+                                            data-twe-dropdown-menu-ref
+                                        >
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/event-planner-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Події </a>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/calendar-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Графік богослужінь</a>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/phone-book-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Контакти </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <img
+                src="/src/assets/section-big-img.jpg"
+                class="section__big-img"
+                alt=""
+            />
+            <main class="main bg-Jesus bg-top-14 md:bg-none">
+                <!-- блок ниже можно убрать -->
+                <div class="container flex flex-col">
+                    <a href="/news.html" class="text-3xl text-brownC900">
+                        News
+                    </a>
+                    <a href="/contancts.html" class="text-3xl text-brownC900">
+                        Contacts
+                    </a>
+                    <a href="/serviсe.html" class="text-3xl text-brownC900">
+                        Serviсe
+                    </a>
+                    <a href="/media.html" class="text-3xl text-brownC900">
+                        Media
+                    </a>
+                    <a href="/events.html" class="text-3xl text-brownC900">
+                        Events
+                    </a>
+                </div>
+                <!-- news -->
+                <section class="section">
+                    <div class="section-wrap">
+                        <h2 class="section-title">НОВИНИ</h2>
+                        <div class="swiper mySwiper swiperNews">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide news-slide">
+                                    <a href="#" class="news__card">
+                                        <img
+                                            src="/src/assets/news-slide-img.jpg"
+                                            alt=""
+                                            class="news__card-img"
+                                        />
+                                        <p class="news__card-date">24 Лют</p>
+                                        <h3 class="news__card-title">
+                                            Взаємини між Богом і людиною
+                                        </h3>
+                                        <h4 class="news__card-info">
+                                            Анатолій Козачок, церква Благодать
+                                            24.02.2024
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide news-slide">
+                                    <a href="#" class="news__card">
+                                        <img
+                                            src="/src/assets/news-slide-img.jpg"
+                                            alt=""
+                                            class="news__card-img"
+                                        />
+                                        <p class="news__card-date">24 Лют</p>
+                                        <h3 class="news__card-title">
+                                            Взаємини між Богом і людиною
+                                        </h3>
+                                        <h4 class="news__card-info">
+                                            Анатолій Козачок, церква Благодать
+                                            24.02.2024
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide news-slide">
+                                    <a href="#" class="news__card">
+                                        <img
+                                            src="/src/assets/news-slide-img.jpg"
+                                            alt=""
+                                            class="news__card-img"
+                                        />
+                                        <p class="news__card-date">24 Лют</p>
+                                        <h3 class="news__card-title">
+                                            Взаємини між Богом і людиною
+                                        </h3>
+                                        <h4 class="news__card-info">
+                                            Анатолій Козачок, церква Благодать
+                                            24.02.2024
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide news-slide">
+                                    <a href="#" class="news__card">
+                                        <img
+                                            src="/src/assets/news-slide-img.jpg"
+                                            alt=""
+                                            class="news__card-img"
+                                        />
+                                        <p class="news__card-date">24 Лют</p>
+                                        <h3 class="news__card-title">
+                                            Взаємини між Богом і людиною
+                                        </h3>
+                                        <h4 class="news__card-info">
+                                            Анатолій Козачок, церква Благодать
+                                            24.02.2024
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide news-slide">
+                                    <a href="#" class="news__card">
+                                        <img
+                                            src="/src/assets/news-slide-img.jpg"
+                                            alt=""
+                                            class="news__card-img"
+                                        />
+                                        <p class="news__card-date">24 Лют</p>
+                                        <h3 class="news__card-title">
+                                            Взаємини між Богом і людиною
+                                        </h3>
+                                        <h4 class="news__card-info">
+                                            Анатолій Козачок, церква Благодать
+                                            24.02.2024
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide news-slide">
+                                    <a href="#" class="news__card">
+                                        <img
+                                            src="/src/assets/news-slide-img.jpg"
+                                            alt=""
+                                            class="news__card-img"
+                                        />
+                                        <p class="news__card-date">24 Лют</p>
+                                        <h3 class="news__card-title">
+                                            Взаємини між Богом і людиною
+                                        </h3>
+                                        <h4 class="news__card-info">
+                                            Анатолій Козачок, церква Благодать
+                                            24.02.2024
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide news-slide">
+                                    <a href="#" class="news__card">
+                                        <img
+                                            src="/src/assets/news-slide-img.jpg"
+                                            alt=""
+                                            class="news__card-img"
+                                        />
+                                        <p class="news__card-date">24 Лют</p>
+                                        <h3 class="news__card-title">
+                                            Взаємини між Богом і людиною
+                                        </h3>
+                                        <h4 class="news__card-info">
+                                            Анатолій Козачок, церква Благодать
+                                            24.02.2024
+                                        </h4>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide news-slide">
+                                    <a href="#" class="news__card">
+                                        <img
+                                            src="/src/assets/news-slide-img.jpg"
+                                            alt=""
+                                            class="news__card-img"
+                                        />
+                                        <p class="news__card-date">24 Лют</p>
+                                        <h3 class="news__card-title">
+                                            Взаємини між Богом і людиною
+                                        </h3>
+                                        <h4 class="news__card-info">
+                                            Анатолій Козачок, церква Благодать
+                                            24.02.2024
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next news-button-next">
+                                <svg
+                                    width="44"
+                                    height="45"
+                                    viewBox="0 0 44 45"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_45_247)">
+                                        <path
+                                            d="M41.5555 22.8748C41.5555 18.9905 40.4086 15.1934 38.2598 11.9636C36.111 8.73393 33.0569 6.21668 29.4836 4.73021C25.9103 3.24374 21.9783 2.85481 18.1849 3.61261C14.3915 4.3704 10.907 6.24089 8.17212 8.98753C5.43723 11.7342 3.57474 15.2336 2.82019 19.0433C2.06563 22.853 2.4529 26.8019 3.93301 30.3905C5.41312 33.9792 7.91961 37.0465 11.1355 39.2045C14.3514 41.3625 18.1323 42.5144 22 42.5144C27.1864 42.5144 32.1605 40.4452 35.8279 36.7621C39.4952 33.0789 41.5555 28.0835 41.5555 22.8748ZM22.5255 32.6946C22.206 32.3666 22.0271 31.926 22.0271 31.4671C22.0271 31.0083 22.206 30.5676 22.5255 30.2396L28.1111 24.5933L10.8289 24.5933C10.3751 24.5933 9.93983 24.4122 9.61894 24.0899C9.29804 23.7677 9.11777 23.3306 9.11777 22.8748C9.11777 22.419 9.29804 21.9819 9.61894 21.6597C9.93983 21.3374 10.3751 21.1563 10.8289 21.1563L27.94 21.1563L22.5255 15.7186C22.2014 15.3931 22.0193 14.9516 22.0193 14.4912C22.0193 14.0308 22.2014 13.5892 22.5255 13.2637C22.8497 12.9381 23.2893 12.7553 23.7478 12.7553C24.2062 12.7553 24.6458 12.9381 24.97 13.2637L34.5889 22.973L24.9455 32.6946C24.7867 32.8542 24.598 32.9808 24.3904 33.0671C24.1828 33.1535 23.9603 33.198 23.7355 33.198C23.5108 33.198 23.2883 33.1535 23.0807 33.0671C22.8731 32.9808 22.6844 32.8542 22.5255 32.6946Z"
+                                            fill="#532F23"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_45_247">
+                                            <rect
+                                                width="44.189"
+                                                height="44"
+                                                fill="white"
+                                                transform="translate(44 0.780273) rotate(90)"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-prev news-button-prev">
+                                <svg
+                                    width="48"
+                                    height="48"
+                                    viewBox="0 0 48 48"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M2.66663 23.9999C2.66663 28.2192 3.9178 32.3438 6.26194 35.8521C8.60608 39.3603 11.9379 42.0947 15.836 43.7093C19.7342 45.324 24.0236 45.7465 28.1619 44.9233C32.3001 44.1002 36.1014 42.0684 39.0849 39.0849C42.0684 36.1013 44.1002 32.3001 44.9234 28.1618C45.7465 24.0236 45.3241 19.7342 43.7094 15.836C42.0947 11.9378 39.3604 8.60603 35.8521 6.26189C32.3439 3.91775 28.2193 2.66657 24 2.66657C18.342 2.66657 12.9158 4.91418 8.91502 8.91496C4.91424 12.9157 2.66663 18.342 2.66663 23.9999ZM23.4266 13.3332C23.7752 13.6895 23.9704 14.1681 23.9704 14.6666C23.9704 15.165 23.7752 15.6436 23.4266 15.9999L17.3333 22.1332L36.1866 22.1332C36.6817 22.1332 37.1565 22.3299 37.5066 22.68C37.8566 23.03 38.0533 23.5048 38.0533 23.9999C38.0533 24.495 37.8566 24.9698 37.5066 25.3198C37.1565 25.6699 36.6817 25.8666 36.1866 25.8666L17.52 25.8666L23.4266 31.7732C23.7802 32.1269 23.9789 32.6065 23.9789 33.1066C23.9789 33.6067 23.7802 34.0863 23.4266 34.4399C23.073 34.7935 22.5934 34.9922 22.0933 34.9922C21.5932 34.9922 21.1136 34.7935 20.76 34.4399L10.2666 23.8932L20.7866 13.3332C20.96 13.1599 21.1658 13.0224 21.3922 12.9286C21.6187 12.8347 21.8615 12.7864 22.1066 12.7864C22.3518 12.7864 22.5945 12.8347 22.821 12.9286C23.0475 13.0224 23.2533 13.1599 23.4266 13.3332Z"
+                                        fill="#532F23"
+                                    />
+                                </svg>
+                            </div>
+                            <div
+                                class="swiper-pagination news__pagination"
+                            ></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- СЛУЖІННЯ -->
+                <section class="section">
+                    <div class="container">
+                        <div class="section__wrap">
+                            <h2 class="section-title">СЛУЖІННЯ</h2>
+                            <div class="ministry-grid">
+                                <a href="#" class="ministry__card">
+                                    <img
+                                        src="/src/assets/ministry-card.jpg"
+                                        alt=""
+                                        class="ministry-img"
+                                    />
+                                    <h4 class="ministry__card-title">
+                                        Дитяче служіння
+                                    </h4>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="ministry__card relative duration-150 hover:opacity-80"
+                                >
+                                    <img
+                                        src="/src/assets/ministry-card.jpg"
+                                        alt=""
+                                        class="ministry-img rounded-xl"
+                                    />
+                                    <h4
+                                        class="ministry__card-title h4C absolute bottom-0 left-0 right-0 rounded-b-xl bg-black bg-opacity-70 py-6 text-center text-white"
+                                    >
+                                        Дитяче служіння
+                                    </h4>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="ministry__card relative duration-150 hover:opacity-80"
+                                >
+                                    <img
+                                        src="/src/assets/ministry-card.jpg"
+                                        alt=""
+                                        class="ministry-img rounded-xl"
+                                    />
+                                    <h4
+                                        class="ministry__card-title h4C absolute bottom-0 left-0 right-0 rounded-b-xl bg-black bg-opacity-70 py-6 text-center text-white"
+                                    >
+                                        Дитяче служіння
+                                    </h4>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="ministry__card relative duration-150 hover:opacity-80"
+                                >
+                                    <img
+                                        src="/src/assets/ministry-card.jpg"
+                                        alt=""
+                                        class="ministry-img rounded-xl"
+                                    />
+                                    <h4
+                                        class="ministry__card-title h4C absolute bottom-0 left-0 right-0 rounded-b-xl bg-black bg-opacity-70 py-6 text-center text-white"
+                                    >
+                                        Дитяче служіння
+                                    </h4>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="ministry__card relative duration-150 hover:opacity-80"
+                                >
+                                    <img
+                                        src="/src/assets/ministry-card.jpg"
+                                        alt=""
+                                        class="ministry-img rounded-xl"
+                                    />
+                                    <h4
+                                        class="ministry__card-title h4C absolute bottom-0 left-0 right-0 rounded-b-xl bg-black bg-opacity-70 py-6 text-center text-white"
+                                    >
+                                        Дитяче служіння
+                                    </h4>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="ministry__card relative duration-150 hover:opacity-80"
+                                >
+                                    <img
+                                        src="/src/assets/ministry-card.jpg"
+                                        alt=""
+                                        class="ministry-img rounded-xl"
+                                    />
+                                    <h4
+                                        class="ministry__card-title h4C absolute bottom-0 left-0 right-0 rounded-b-xl bg-black bg-opacity-70 py-6 text-center text-white"
+                                    >
+                                        Дитяче служіння
+                                    </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ПРО НАС -->
+                <section class="section">
+                    <div class="container">
+                        <div class="section__wrap">
+                            <h2 class="section-title">ПРО НАС</h2>
+                            <div class="swiper mySwiper swiperAbout">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide about-slide">
+                                        <img
+                                            src="/src/assets/about-1.jpg"
+                                            alt=""
+                                            class="about-slide-img"
+                                        />
+                                        <p class="about-slide-title">
+                                            Витоки Церкви Благодать. Згадує
+                                            перший пастор Василь Степанович
+                                            Кватерчук: «Це був вечір, я згадую,
+                                            нас шестеро братів зібралися і ми
+                                            провели першу молитву, перше
+                                            богослужіння...
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide about-slide">
+                                        <img
+                                            src="/src/assets/about-1.jpg"
+                                            alt=""
+                                            class="about-slide-img"
+                                        />
+                                        <p class="about-slide-title">
+                                            Витоки Церкви Благодать. Згадує
+                                            перший пастор Василь Степанович
+                                            Кватерчук: «Це був вечір, я згадую,
+                                            нас шестеро братів зібралися і ми
+                                            провели першу молитву, перше
+                                            богослужіння...
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide about-slide">
+                                        <img
+                                            src="/src/assets/about-1.jpg"
+                                            alt=""
+                                            class="about-slide-img"
+                                        />
+                                        <p class="about-slide-title">
+                                            Витоки Церкви Благодать. Згадує
+                                            перший пастор Василь Степанович
+                                            Кватерчук: «Це був вечір, я згадую,
+                                            нас шестеро братів зібралися і ми
+                                            провели першу молитву, перше
+                                            богослужіння...
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide about-slide">
+                                        <img
+                                            src="/src/assets/about-1.jpg"
+                                            alt=""
+                                            class="about-slide-img"
+                                        />
+                                        <p class="about-slide-title">
+                                            Витоки Церкви Благодать. Згадує
+                                            перший пастор Василь Степанович
+                                            Кватерчук: «Це був вечір, я згадую,
+                                            нас шестеро братів зібралися і ми
+                                            провели першу молитву, перше
+                                            богослужіння...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-button-next about-button-next"
+                                >
+                                    <svg
+                                        width="44"
+                                        height="45"
+                                        viewBox="0 0 44 45"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g clip-path="url(#clip0_45_247)">
+                                            <path
+                                                d="M41.5555 22.8748C41.5555 18.9905 40.4086 15.1934 38.2598 11.9636C36.111 8.73393 33.0569 6.21668 29.4836 4.73021C25.9103 3.24374 21.9783 2.85481 18.1849 3.61261C14.3915 4.3704 10.907 6.24089 8.17212 8.98753C5.43723 11.7342 3.57474 15.2336 2.82019 19.0433C2.06563 22.853 2.4529 26.8019 3.93301 30.3905C5.41312 33.9792 7.91961 37.0465 11.1355 39.2045C14.3514 41.3625 18.1323 42.5144 22 42.5144C27.1864 42.5144 32.1605 40.4452 35.8279 36.7621C39.4952 33.0789 41.5555 28.0835 41.5555 22.8748ZM22.5255 32.6946C22.206 32.3666 22.0271 31.926 22.0271 31.4671C22.0271 31.0083 22.206 30.5676 22.5255 30.2396L28.1111 24.5933L10.8289 24.5933C10.3751 24.5933 9.93983 24.4122 9.61894 24.0899C9.29804 23.7677 9.11777 23.3306 9.11777 22.8748C9.11777 22.419 9.29804 21.9819 9.61894 21.6597C9.93983 21.3374 10.3751 21.1563 10.8289 21.1563L27.94 21.1563L22.5255 15.7186C22.2014 15.3931 22.0193 14.9516 22.0193 14.4912C22.0193 14.0308 22.2014 13.5892 22.5255 13.2637C22.8497 12.9381 23.2893 12.7553 23.7478 12.7553C24.2062 12.7553 24.6458 12.9381 24.97 13.2637L34.5889 22.973L24.9455 32.6946C24.7867 32.8542 24.598 32.9808 24.3904 33.0671C24.1828 33.1535 23.9603 33.198 23.7355 33.198C23.5108 33.198 23.2883 33.1535 23.0807 33.0671C22.8731 32.9808 22.6844 32.8542 22.5255 32.6946Z"
+                                                fill="#532F23"
+                                            />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_45_247">
+                                                <rect
+                                                    width="44.189"
+                                                    height="44"
+                                                    fill="white"
+                                                    transform="translate(44 0.780273) rotate(90)"
+                                                />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div
+                                    class="swiper-button-prev about-button-prev"
+                                >
+                                    <svg
+                                        width="48"
+                                        height="48"
+                                        viewBox="0 0 48 48"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M2.66663 23.9999C2.66663 28.2192 3.9178 32.3438 6.26194 35.8521C8.60608 39.3603 11.9379 42.0947 15.836 43.7093C19.7342 45.324 24.0236 45.7465 28.1619 44.9233C32.3001 44.1002 36.1014 42.0684 39.0849 39.0849C42.0684 36.1013 44.1002 32.3001 44.9234 28.1618C45.7465 24.0236 45.3241 19.7342 43.7094 15.836C42.0947 11.9378 39.3604 8.60603 35.8521 6.26189C32.3439 3.91775 28.2193 2.66657 24 2.66657C18.342 2.66657 12.9158 4.91418 8.91502 8.91496C4.91424 12.9157 2.66663 18.342 2.66663 23.9999ZM23.4266 13.3332C23.7752 13.6895 23.9704 14.1681 23.9704 14.6666C23.9704 15.165 23.7752 15.6436 23.4266 15.9999L17.3333 22.1332L36.1866 22.1332C36.6817 22.1332 37.1565 22.3299 37.5066 22.68C37.8566 23.03 38.0533 23.5048 38.0533 23.9999C38.0533 24.495 37.8566 24.9698 37.5066 25.3198C37.1565 25.6699 36.6817 25.8666 36.1866 25.8666L17.52 25.8666L23.4266 31.7732C23.7802 32.1269 23.9789 32.6065 23.9789 33.1066C23.9789 33.6067 23.7802 34.0863 23.4266 34.4399C23.073 34.7935 22.5934 34.9922 22.0933 34.9922C21.5932 34.9922 21.1136 34.7935 20.76 34.4399L10.2666 23.8932L20.7866 13.3332C20.96 13.1599 21.1658 13.0224 21.3922 12.9286C21.6187 12.8347 21.8615 12.7864 22.1066 12.7864C22.3518 12.7864 22.5945 12.8347 22.821 12.9286C23.0475 13.0224 23.2533 13.1599 23.4266 13.3332Z"
+                                            fill="#532F23"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrap">
+                        <div class="footer__info">
+                            <div class="footer__block md:order-1 l:max-w-36">
+                                <h3 class="footer__block-title">Наша адреса</h3>
+                                <div class="footer__block-text max-w-[190px]">
+                                    <p class="body3C">
+                                        Київська областьс. Софіївська
+                                        Борщагівкавул. Київська, 40
+                                    </p>
+                                    <p class="body3C">+38 (067) 600 29 29</p>
+                                    <p class="body3C">info@blagodat.ua</p>
+                                </div>
+                            </div>
+                            <div class="footer__block md:order-3">
+                                <h3 class="footer__block-title">
+                                    Розклад богослужінь
+                                </h3>
+                                <div
+                                    class="footer__block-text max-w-[300px] md:max-w-none"
+                                >
+                                    <p class="body3C">
+                                        НД – 10:00 Центральне богослужіння
+                                    </p>
+                                    <p class="body3C">НД – 18:00 Молодіжне.</p>
+                                    <p class="body3C">
+                                        ПН – ПТ Молитовні богослужіння кожних 4
+                                        години
+                                    </p>
+                                    <p class="body3C">
+                                        ПН – ПТ Молитовні богослужіння кожних 4
+                                        години
+                                    </p>
+                                    <p class="body3C">
+                                        00:00, 4:00, 8:00, 12:00, 16:00. 20:00)
+                                    </p>
+                                    <p class="body3C">СБ – 20:00 Молитва</p>
+                                </div>
+                            </div>
+                            <div class="footer__block md:order-2 l:max-w-36">
+                                <h3 class="footer__block-title">
+                                    Соціальні мережі
+                                </h3>
+                                <div class="footer__icons">
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/facebook.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/youtube.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/instagram.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <p class="footer__copyright">
+                                Copyright © 2024 — Церква Благодать. All Rights
+                                Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script
+            type="text/javascript"
+            src="/node_modules/tw-elements/js/tw-elements.umd.min.js"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="/src/js/main.js"></script>
+    </body>
+</html>

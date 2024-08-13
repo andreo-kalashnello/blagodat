@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+        />
+        <link rel="stylesheet" href="/src/css/style.css" />
+        <title>event</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrap">
+                        <a class="logo-link" href="index.html">
+                            <img
+                                src="/src/assets/logo.png"
+                                alt=""
+                                class="logo"
+                            />
+                        </a>
+                        <button class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <nav class="header__nav md:-translate-x-full">
+                            <button class="header__search">
+                                <svg
+                                    width="60"
+                                    height="52"
+                                    viewBox="0 0 60 52"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        x="0.5"
+                                        y="0.5"
+                                        width="59"
+                                        height="51"
+                                        rx="25.5"
+                                        stroke="#EFE8E8"
+                                    />
+                                    <path
+                                        d="M29 33C33.4183 33 37 29.4183 37 25C37 20.5817 33.4183 17 29 17C24.5817 17 21 20.5817 21 25C21 29.4183 24.5817 33 29 33Z"
+                                        stroke="#B3925F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M39 35L34.65 30.65"
+                                        stroke="#B3925F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                            <form action="" class="header__search-form">
+                                <button
+                                    type="button"
+                                    class="header__search-close opacity-0"
+                                >
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M18 6L6 18"
+                                            stroke="#B3925F"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M6 6L18 18"
+                                            stroke="#B3925F"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                                <input
+                                    type="text"
+                                    class="header__search-input w-0 opacity-0"
+                                />
+                            </form>
+                            <ul class="header__nav-list">
+                                <li
+                                    class="header__nav-item header__nav-item-link hidden md:flex"
+                                    data-twe-ripple-init=""
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/church-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Служіння</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <div class="relative" data-twe-dropdown-ref>
+                                        <button
+                                            class="header__dropdown flex md:hidden"
+                                            type="button"
+                                            id="dropdownMenuButton1"
+                                            data-twe-dropdown-toggle-ref
+                                            aria-expanded="false"
+                                            data-twe-ripple-init
+                                            data-twe-ripple-color="light"
+                                        >
+                                            <img
+                                                src="/src/assets/church-icon.svg"
+                                                alt=""
+                                            />
+                                            <span>Служіння</span>
+                                            <span
+                                                class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    class="md:hidden"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul
+                                            class="header__dropdown-list"
+                                            aria-labelledby="dropdownMenuButton1"
+                                            data-twe-dropdown-menu-ref
+                                        >
+                                            <li class="header__dropdown-item">
+                                                <img
+                                                    src=""
+                                                    alt=""
+                                                    class="hidden md:block"
+                                                />
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-media"
+                                >
+                                    <div class="relative" data-twe-dropdown-ref>
+                                        <button
+                                            class="header__dropdown flex"
+                                            type="button"
+                                            id="dropdownMenuButton2"
+                                            data-twe-dropdown-toggle-ref
+                                            aria-expanded="false"
+                                            data-twe-ripple-init
+                                            data-twe-ripple-color="light"
+                                        >
+                                            <img
+                                                src="/src/assets/media-icon.svg"
+                                                alt=""
+                                            />
+                                            <span>Медіа</span>
+                                            <span
+                                                class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    class="md:hidden"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul
+                                            class="header__dropdown-list"
+                                            aria-labelledby="dropdownMenuButton2"
+                                            data-twe-dropdown-menu-ref
+                                        >
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/event-planner-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Події </a>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/calendar-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Графік богослужінь</a>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/phone-book-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Контакти </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main bg-Jesus bg-top-40 md:bg-none">
+                <div class="container">
+                    <div class="page__top mb-0">
+                        <nav class="breadcrumbs">
+                            <ol class="list-reset flex">
+                                <li>
+                                    <a href="#" class="breadcrumbs__item"
+                                        >Головна</a
+                                    >
+                                </li>
+                                <li>
+                                    <span class="breadcrumbs__item-arrow"
+                                        >></span
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="breadcrumbs__item"
+                                        >Новини</a
+                                    >
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <img
+                    src="/src/assets/event-big-img.jpg"
+                    class="section__big-img mb-14 md:mb-6"
+                    alt=""
+                />
+                <h1 class="main-title">Події</h1>
+
+                <div class="events__wrap">
+                    <div class="container">
+                        <div class="event">
+                            <form
+                                action=""
+                                class="searchpage-input-wrap eventsearch-input-wrap"
+                            >
+                                <input
+                                    type="text"
+                                    class="searchpage-input eventsearch-input"
+                                    placeholder="Пошук"
+                                />
+                                <button
+                                    type="button"
+                                    class="searchpage-loup block"
+                                >
+                                    <img
+                                        src="/src/assets/page-search.svg"
+                                        alt=""
+                                        class="searchpage-input-img"
+                                    />
+                                </button>
+                                <button
+                                    type="button"
+                                    class="searchpage-close hidden"
+                                >
+                                    <img
+                                        src="/src/assets/page-search-close.svg"
+                                        alt=""
+                                        class="searchpage-input-img"
+                                    />
+                                </button>
+                            </form>
+                            <div class="mb-24 flex lg:mb-6 lg:flex-col">
+                                <div class="main__content">
+                                    <div class="filters__event">
+                                        <div class="filters__event-btns">
+                                            <a href="#" class="filter__event">
+                                                Цього тижня
+                                            </a>
+                                            <a href="#" class="filter__event">
+                                                Цього місяця
+                                            </a>
+                                        </div>
+                                        <!-- календарь -->
+                                        <div class="filter__event-calendar">
+                                            <input
+                                                type="text"
+                                                name="daterange"
+                                                value=""
+                                                placeholder="Дата"
+                                                class="event-calendar__inp"
+                                                readonly
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="event__card">
+                                        <img
+                                            class="event__card-img"
+                                            src="/src/assets/event-img-1.jpg"
+                                            alt=""
+                                        />
+                                        <div class="event__card-text">
+                                            <div class="event__title">
+                                                Взаємини між Богом і людиною
+                                            </div>
+                                            <p class="event__info">
+                                                Карророткий опис події Короткий
+                                                опис події Короткий опис
+                                                поапрпардії Короткий опис події
+                                                Короткий опис події Короткий
+                                                опис події Короткий
+                                            </p>
+                                            <div class="event__bottom">
+                                                <div class="event__date">
+                                                    <img
+                                                        src="/src/assets/date-clock.svg"
+                                                        alt=""
+                                                    />
+                                                    <span>
+                                                        12 лют, 2024 08:00
+                                                    </span>
+                                                </div>
+                                                <a href="#" class="event__more">
+                                                    Дізнатись більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event__card">
+                                        <img
+                                            class="event__card-img"
+                                            src="/src/assets/event-img-1.jpg"
+                                            alt=""
+                                        />
+                                        <div class="event__card-text">
+                                            <div class="event__title">
+                                                Взаємини між Богом і людиною
+                                            </div>
+                                            <p class="event__info">
+                                                Карророткий опис події Короткий
+                                                опис події Короткий опис
+                                                поапрпардії Короткий опис події
+                                                Короткий опис події Короткий
+                                                опис події Короткий
+                                            </p>
+                                            <div class="event__bottom">
+                                                <div class="event__date">
+                                                    <img
+                                                        src="/src/assets/date-clock.svg"
+                                                        alt=""
+                                                    />
+                                                    <span>
+                                                        12 лют, 2024 08:00
+                                                    </span>
+                                                </div>
+                                                <a href="#" class="event__more">
+                                                    Дізнатись більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event__card">
+                                        <img
+                                            class="event__card-img"
+                                            src="/src/assets/event-img-1.jpg"
+                                            alt=""
+                                        />
+                                        <div class="event__card-text">
+                                            <div class="event__title">
+                                                Взаємини між Богом і людиною
+                                            </div>
+                                            <p class="event__info">
+                                                Карророткий опис події Короткий
+                                                опис події Короткий опис
+                                                поапрпардії Короткий опис події
+                                                Короткий опис події Короткий
+                                                опис події Короткий
+                                            </p>
+                                            <div class="event__bottom">
+                                                <div class="event__date">
+                                                    <img
+                                                        src="/src/assets/date-clock.svg"
+                                                        alt=""
+                                                    />
+                                                    <span>
+                                                        12 лют, 2024 08:00
+                                                    </span>
+                                                </div>
+                                                <a href="#" class="event__more">
+                                                    Дізнатись більше
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <aside class="aside__content">
+                                    <div class="media__aside-block">
+                                        <h3 class="media__aside-title">
+                                            Останні записи
+                                        </h3>
+                                        <a href="#" class="media__last-item">
+                                            <img
+                                                class="media__last-img"
+                                                src="/src/assets/last-1.jpg"
+                                                alt=""
+                                            />
+                                            <div class="media__last-text">
+                                                <h4 class="media__last-title">
+                                                    Назва запису
+                                                </h4>
+                                                <div class="media__last-info">
+                                                    Короткий опис Короткий опис
+                                                </div>
+                                                <div class="media__last-date">
+                                                    14 лют, 2022
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="media__last-item">
+                                            <img
+                                                class="media__last-img"
+                                                src="/src/assets/last-1.jpg"
+                                                alt=""
+                                            />
+                                            <div class="media__last-text">
+                                                <h4 class="media__last-title">
+                                                    Назва запису
+                                                </h4>
+                                                <div class="media__last-info">
+                                                    Короткий опис Короткий опис
+                                                </div>
+                                                <div class="media__last-date">
+                                                    14 лют, 2022
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="media__last-item">
+                                            <img
+                                                class="media__last-img"
+                                                src="/src/assets/last-1.jpg"
+                                                alt=""
+                                            />
+                                            <div class="media__last-text">
+                                                <h4 class="media__last-title">
+                                                    Назва запису
+                                                </h4>
+                                                <div class="media__last-info">
+                                                    Короткий опис Короткий опис
+                                                </div>
+                                                <div class="media__last-date">
+                                                    14 лют, 2022
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="media__aside-block">
+                                        <h3 class="media__aside-title">
+                                            Ми в мережах
+                                        </h3>
+                                        <div class="contacts__links-icons">
+                                            <img
+                                                src="/src/assets/facebook-circle.svg"
+                                                alt=""
+                                            />
+                                            <img
+                                                src="/src/assets/contact-instagram.svg"
+                                                alt=""
+                                            />
+                                            <img
+                                                src="/src/assets/contact-youtube.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                            <nav
+                                aria-label="Page navigation example"
+                                class="event__pagination"
+                            >
+                                <ul class="event__pagination-list">
+                                    <li>
+                                        <a
+                                            class="event__pagination-link"
+                                            href="#"
+                                            aria-label="Previous"
+                                        >
+                                            <span aria-hidden="true"
+                                                ><svg
+                                                    width="16"
+                                                    height="16"
+                                                    viewBox="0 0 16 16"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M8.48424 2.45796C8.54439 2.39432 8.59141 2.31944 8.62262 2.23763C8.65383 2.15581 8.66862 2.06864 8.66614 1.98111C8.66367 1.89357 8.64397 1.80738 8.60819 1.72746C8.5724 1.64753 8.52122 1.57544 8.45758 1.5153C8.39393 1.45515 8.31906 1.40813 8.23724 1.37692C8.15542 1.34571 8.06826 1.33092 7.98072 1.3334C7.89319 1.33587 7.807 1.35557 7.72707 1.39135C7.64715 1.42714 7.57506 1.47832 7.51491 1.54196L1.84824 7.54196C1.73122 7.66574 1.66602 7.82962 1.66602 7.99996C1.66602 8.1703 1.73122 8.33418 1.84824 8.45796L7.51491 14.4586C7.57466 14.5237 7.64674 14.5762 7.72695 14.6131C7.80717 14.6501 7.89393 14.6707 7.98219 14.6739C8.07046 14.677 8.15846 14.6626 8.2411 14.6314C8.32374 14.6002 8.39936 14.553 8.46358 14.4923C8.52779 14.4317 8.57931 14.3589 8.61516 14.2782C8.651 14.1975 8.67045 14.1104 8.67237 14.0221C8.6743 13.9338 8.65866 13.846 8.62636 13.7638C8.59406 13.6816 8.54576 13.6067 8.48424 13.5433L3.24958 7.99996L8.48424 2.45796Z"
+                                                        fill="#B3925F"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="event__pagination-link active"
+                                            href="#"
+                                            >1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="event__pagination-link"
+                                            href="#"
+                                            >2</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="event__pagination-link"
+                                            href="#"
+                                            >...</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="event__pagination-link"
+                                            href="#"
+                                            >5</a
+                                        >
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            class="event__pagination-link"
+                                            href="#"
+                                            aria-label="Next"
+                                            ><span aria-hidden="true"
+                                                ><svg
+                                                    width="16"
+                                                    height="16"
+                                                    viewBox="0 0 16 16"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M7.51576 13.542C7.45561 13.6057 7.40859 13.6806 7.37738 13.7624C7.34617 13.8442 7.33138 13.9314 7.33386 14.0189C7.33633 14.1064 7.35603 14.1926 7.39181 14.2725C7.4276 14.3525 7.47878 14.4246 7.54242 14.4847C7.60607 14.5448 7.68094 14.5919 7.76276 14.6231C7.84458 14.6543 7.93174 14.6691 8.01928 14.6666C8.10681 14.6641 8.193 14.6444 8.27293 14.6086C8.35285 14.5729 8.42494 14.5217 8.48509 14.458L14.1518 8.45804C14.2688 8.33426 14.334 8.17038 14.334 8.00004C14.334 7.8297 14.2688 7.66582 14.1518 7.54204L8.48509 1.54137C8.42534 1.47633 8.35327 1.42381 8.27305 1.38686C8.19283 1.34991 8.10607 1.32927 8.01781 1.32613C7.92954 1.32299 7.84154 1.33743 7.7589 1.36859C7.67626 1.39975 7.60064 1.44703 7.53643 1.50766C7.47221 1.5683 7.42069 1.64109 7.38484 1.72181C7.349 1.80253 7.32955 1.88956 7.32763 1.97786C7.3257 2.06616 7.34134 2.15396 7.37364 2.23616C7.40594 2.31836 7.45424 2.39333 7.51576 2.4567L12.7504 8.00004L7.51576 13.542Z"
+                                                        fill="#B3925F"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrap">
+                        <div class="footer__info">
+                            <div class="footer__block md:order-1 l:max-w-36">
+                                <h3 class="footer__block-title">Наша адреса</h3>
+                                <div class="footer__block-text max-w-[190px]">
+                                    <p class="body3C">
+                                        Київська областьс. Софіївська
+                                        Борщагівкавул. Київська, 40
+                                    </p>
+                                    <p class="body3C">+38 (067) 600 29 29</p>
+                                    <p class="body3C">info@blagodat.ua</p>
+                                </div>
+                            </div>
+                            <div class="footer__block md:order-3">
+                                <h3 class="footer__block-title">
+                                    Розклад богослужінь
+                                </h3>
+                                <div
+                                    class="footer__block-text max-w-[300px] md:max-w-none"
+                                >
+                                    <p class="body3C">
+                                        НД – 10:00 Центральне богослужіння
+                                    </p>
+                                    <p class="body3C">НД – 18:00 Молодіжне.</p>
+                                    <p class="body3C">
+                                        ПН – ПТ Молитовні богослужіння кожних 4
+                                        години
+                                    </p>
+                                    <p class="body3C">
+                                        ПН – ПТ Молитовні богослужіння кожних 4
+                                        години
+                                    </p>
+                                    <p class="body3C">
+                                        00:00, 4:00, 8:00, 12:00, 16:00. 20:00)
+                                    </p>
+                                    <p class="body3C">СБ – 20:00 Молитва</p>
+                                </div>
+                            </div>
+                            <div class="footer__block md:order-2 l:max-w-36">
+                                <h3 class="footer__block-title">
+                                    Соціальні мережі
+                                </h3>
+                                <div class="footer__icons">
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/facebook.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/youtube.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/instagram.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <p class="footer__copyright">
+                                Copyright © 2024 — Церква Благодать. All Rights
+                                Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="/src/js/event-calendar.js"></script>
+        <script
+            type="text/javascript"
+            src="/node_modules/tw-elements/js/tw-elements.umd.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+        ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/daterangepicker/locale/uk.js"></script>
+        <script src="/src/js/main.js"></script>
+    </body>
+</html>

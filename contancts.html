@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/css/style.css" />
+        <title>Contacts</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrap">
+                        <a class="logo-link" href="index.html">
+                            <img
+                                src="/src/assets/logo.png"
+                                alt=""
+                                class="logo"
+                            />
+                        </a>
+                        <button class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <nav class="header__nav md:-translate-x-full">
+                            <button class="header__search">
+                                <svg
+                                    width="60"
+                                    height="52"
+                                    viewBox="0 0 60 52"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        x="0.5"
+                                        y="0.5"
+                                        width="59"
+                                        height="51"
+                                        rx="25.5"
+                                        stroke="#EFE8E8"
+                                    />
+                                    <path
+                                        d="M29 33C33.4183 33 37 29.4183 37 25C37 20.5817 33.4183 17 29 17C24.5817 17 21 20.5817 21 25C21 29.4183 24.5817 33 29 33Z"
+                                        stroke="#B3925F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M39 35L34.65 30.65"
+                                        stroke="#B3925F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                            <form action="" class="header__search-form">
+                                <button
+                                    type="button"
+                                    class="header__search-close opacity-0"
+                                >
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M18 6L6 18"
+                                            stroke="#B3925F"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M6 6L18 18"
+                                            stroke="#B3925F"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                                <input
+                                    type="text"
+                                    class="header__search-input w-0 opacity-0"
+                                />
+                            </form>
+                            <ul class="header__nav-list">
+                                <li
+                                    class="header__nav-item header__nav-item-link hidden md:flex"
+                                    data-twe-ripple-init=""
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/church-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Служіння</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <div class="relative" data-twe-dropdown-ref>
+                                        <button
+                                            class="header__dropdown flex md:hidden"
+                                            type="button"
+                                            id="dropdownMenuButton1"
+                                            data-twe-dropdown-toggle-ref
+                                            aria-expanded="false"
+                                            data-twe-ripple-init
+                                            data-twe-ripple-color="light"
+                                        >
+                                            <img
+                                                src="/src/assets/church-icon.svg"
+                                                alt=""
+                                            />
+                                            <span>Служіння</span>
+                                            <span
+                                                class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    class="md:hidden"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul
+                                            class="header__dropdown-list"
+                                            aria-labelledby="dropdownMenuButton1"
+                                            data-twe-dropdown-menu-ref
+                                        >
+                                            <li class="header__dropdown-item">
+                                                <img
+                                                    src=""
+                                                    alt=""
+                                                    class="hidden md:block"
+                                                />
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-media"
+                                >
+                                    <div class="relative" data-twe-dropdown-ref>
+                                        <button
+                                            class="header__dropdown flex"
+                                            type="button"
+                                            id="dropdownMenuButton2"
+                                            data-twe-dropdown-toggle-ref
+                                            aria-expanded="false"
+                                            data-twe-ripple-init
+                                            data-twe-ripple-color="light"
+                                        >
+                                            <img
+                                                src="/src/assets/media-icon.svg"
+                                                alt=""
+                                            />
+                                            <span>Медіа</span>
+                                            <span
+                                                class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    class="md:hidden"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <ul
+                                            class="header__dropdown-list"
+                                            aria-labelledby="dropdownMenuButton2"
+                                            data-twe-dropdown-menu-ref
+                                        >
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                            <li class="header__dropdown-item">
+                                                <a
+                                                    class="header__dropdown-link"
+                                                    href="#"
+                                                    data-twe-dropdown-item-ref
+                                                    >Служіння Тато на зустріч</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/event-planner-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Події </a>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/calendar-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Графік богослужінь</a>
+                                </li>
+                                <li
+                                    class="header__nav-item header__nav-item-link"
+                                    data-twe-ripple-init
+                                    data-twe-ripple-color="light"
+                                >
+                                    <img
+                                        src="/src/assets/phone-book-icon.svg"
+                                        alt=""
+                                    />
+                                    <a href="#"> Контакти </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="container">
+                    <div class="page__top">
+                        <nav class="breadcrumbs">
+                            <ol class="list-reset flex">
+                                <li>
+                                    <a href="#" class="breadcrumbs__item"
+                                        >Головна</a
+                                    >
+                                </li>
+                                <li>
+                                    <span class="breadcrumbs__item-arrow"
+                                        >></span
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="breadcrumbs__item"
+                                        >Новини</a
+                                    >
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container">
+                    <section class="section-wrap">
+                        <h1 class="main-title">Контакти</h1>
+                        <div class="googlemaps-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20344.756832795425!2d30.373686332503368!3d50.40207448062102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cbced00fa625%3A0x9866db6b15949066!2z0KbQtdGA0LrQvtCy0Ywg0JHQu9Cw0LPQvtC00LDRgtGM!5e0!3m2!1sru!2sua!4v1714674880390!5m2!1sru!2sua"
+                                style="border: 0"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                        <div class="contacts__info">
+                            <p class="mb-4">
+                                Контакти церкви Благодать: Київська область,
+                                село Софіївська Борщагівка, вулиця Київська, 40.
+                                Телефон: +38 (067) 600 29 29, електронна пошта
+                                info@blagodat.ua Як проїхати громадським
+                                транспортом: від метро «Житомирська» на
+                                маршрутному таксі №720, №721, №369 до зупинки ЖК
+                                «Софія».  Як проїхати автомобілем: поворот з
+                                вул. Велика Кільцева на «Автозаз», поворот
+                                ліворуч на третьому світлофорі за заправкою
+                                «ОККО».
+                            </p>
+                            <p>Контакти церкви Благодать:</p>
+                            <p>
+                                Київська область, село Софіївська Борщагівка,
+                                вулиця Київська, 40.
+                            </p>
+                            <p>Контакти церкви Благодать:</p>
+                            <p>
+                                проїхати автомобілем: поворот з вул. Велика
+                                Кільцева на «Автозаз», поворот ліворуч на
+                            </p>
+                            <p>
+                                Київська область, село Софіївська Борщагівка,
+                                вулиця Київська, 40.
+                            </p>
+                            <p>
+                                Телефон: +38 (067) 600 29 29, електронна пошта
+                                info@blagodat.ua
+                            </p>
+                            <p>
+                                Як проїхати громадським транспортом: від метро
+                                «Житомирська» на маршрутному таксі №720,
+                            </p>
+                            <p>№721, №369 до зупинки ЖК «Софія». </p>
+                            <p>
+                                Як проїхати автомобілем: поворот з вул. Велика
+                                Кільцева на «Автозаз», поворот ліворуч на
+                            </p>
+                            <p>третьому світлофорі за заправкою «ОККО».</p>
+                        </div>
+                        <div class="contacts__links">
+                            <p>Ми в мережах</p>
+                            <div class="contacts__links-icons">
+                                <img
+                                    src="/src/assets/facebook-circle.svg"
+                                    alt=""
+                                />
+                                <img
+                                    src="/src/assets/contact-instagram.svg"
+                                    alt=""
+                                />
+                                <img
+                                    src="/src/assets/contact-youtube.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrap">
+                        <div class="footer__info">
+                            <div class="footer__block md:order-1 l:max-w-36">
+                                <h3 class="footer__block-title">Наша адреса</h3>
+                                <div class="footer__block-text max-w-[190px]">
+                                    <p class="body3C">
+                                        Київська областьс. Софіївська
+                                        Борщагівкавул. Київська, 40
+                                    </p>
+                                    <p class="body3C">+38 (067) 600 29 29</p>
+                                    <p class="body3C">info@blagodat.ua</p>
+                                </div>
+                            </div>
+                            <div class="footer__block md:order-3">
+                                <h3 class="footer__block-title">
+                                    Розклад богослужінь
+                                </h3>
+                                <div
+                                    class="footer__block-text max-w-[300px] md:max-w-none"
+                                >
+                                    <p class="body3C">
+                                        НД – 10:00 Центральне богослужіння
+                                    </p>
+                                    <p class="body3C">НД – 18:00 Молодіжне.</p>
+                                    <p class="body3C">
+                                        ПН – ПТ Молитовні богослужіння кожних 4
+                                        години
+                                    </p>
+                                    <p class="body3C">
+                                        ПН – ПТ Молитовні богослужіння кожних 4
+                                        години
+                                    </p>
+                                    <p class="body3C">
+                                        00:00, 4:00, 8:00, 12:00, 16:00. 20:00)
+                                    </p>
+                                    <p class="body3C">СБ – 20:00 Молитва</p>
+                                </div>
+                            </div>
+                            <div class="footer__block md:order-2 l:max-w-36">
+                                <h3 class="footer__block-title">
+                                    Соціальні мережі
+                                </h3>
+                                <div class="footer__icons">
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/facebook.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/youtube.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="#">
+                                        <img
+                                            src="/src/assets/instagram.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            <p class="footer__copyright">
+                                Copyright © 2024 — Церква Благодать. All Rights
+                                Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script
+            type="text/javascript"
+            src="/node_modules/tw-elements/js/tw-elements.umd.min.js"
+        ></script>
+        <script src="/src/js/main.js"></script>
+    </body>
+</html>
